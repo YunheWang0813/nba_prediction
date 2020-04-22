@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    {% if score1 and score2 %}
+    <div class="row mt-4">
+      <div class="col-4 offset-1 text-center">Main</div>
+      <div class="col-4 offset-2 text-center">Oppt</div>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-4 offset-1 text-center">{{score1}}</div>
+      <div class="col-4 offset-2 text-center">{{score2}}</div>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-4 offset-1 text-center">
+        <img src="{{url_for('static', filename='images/Atlanta%20Hawks.png')}}" class="img-thumbnail">
+      </div>
+      <div class="col-4 offset-2 text-center">
+        <img src="{{url_for('static', filename='images/Atlanta%20Hawks.png')}}" class="img-thumbnail">
+      </div>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-4 offset-1 text-center">{{score3}}%</div>
+      <div class="col-4 offset-2 text-center">{{score4}}%</div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <a href="/" class="btn btn-secondary btn-lg mt-3">Back</a>
+    </div>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-Script
+pytest
+pylint
+requests
+json
