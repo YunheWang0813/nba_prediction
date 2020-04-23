@@ -30,7 +30,7 @@ def result(name1, name2):
     
     score1 = item["Team"]
     score2 = item["Oppt"]
-    
+    print(score1)
     team_win_ratio = item["oppt_loss_probability"]  # Team win ratio
     oppt_win_ratio = item["team_loss_probability"]  # Oppt win ratio
     score3 = round(float(team_win_ratio) * 100, 2)
